@@ -32,30 +32,34 @@ Terraform Cloud/Enterprise: Provides remote execution and state management.
 
 Cron Jobs/Scheduled Tasks: Can be used for periodic drift detection with terraform plan.
 
-Relevant Terraform commands:
+## 🛠️ Essential Terraform Commands
 
-terraform init – Initializes the working directory and downloads providers.
+| Command  | Purpose  |
+|----------|---------|
+| `terraform init` | Initializes the working directory and downloads providers. |
+| `terraform plan` | Shows a preview of the changes before applying them. |
+| `terraform apply` | Creates or updates infrastructure resources. |
+| `terraform destroy` | Destroys all resources defined in the configuration. |
+| `terraform state list` | Lists all resources currently tracked by Terraform state. |
+| `terraform output` | Displays defined output values (e.g., VM IP). |
 
-terraform plan – Shows what changes will be made before applying.
-
-terraform apply – Creates/updates resources.
-
-terraform destroy – Deletes all resources.
-
-terraform state list – Displays tracked resources in the state file.
-
-terraform output – Shows defined output values.
-
+---
 ## What are the advantages and disadvantages of using Terraform?
-### Advantages:
-✔ Infrastructure as Code (IaC) – Ensures consistency and repeatability.
-✔ Multi-Cloud Support – Works across AWS, Azure, GCP, and others.
-✔ Declarative Approach – You define what you want, and Terraform figures out how to do it.
-✔ State Management – Keeps track of resources to avoid duplication.
-✔ Version Control Friendly – Changes can be reviewed before deployment.
+### ✅ Advantages
+| Feature  | Description  |
+|----------|-------------|
+| **Infrastructure as Code (IaC)** | Ensures consistency and repeatability. |
+| **Multi-Cloud Support** | Works across AWS, Azure, GCP, and more. |
+| **Declarative Approach** | Define what you want; Terraform figures out how to provision it. |
+| **State Management** | Tracks resources to prevent duplication. |
+| **Version Control Friendly** | Changes can be reviewed before deployment. |
 
-### Disadvantages:
-✖ State Management Complexity – Requires careful handling, especially in a team.
-✖ Learning Curve – Syntax and best practices take time to master.
-✖ Limited Azure Feature Support – Some new Azure features take time to be supported in Terraform.
-✖ No Built-in Secrets Management – Requires external tools like Azure Key Vault or HashiCorp Vault.
+---
+### ❌ Disadvantages
+| Limitation  | Description  |
+|-------------|-------------|
+| **State Management Complexity** | Requires careful handling, especially in a team setup. |
+| **Learning Curve** | Syntax and best practices take time to master. |
+| **Azure Feature Lag** | Some new Azure features take time to be supported in Terraform. |
+| **No Built-in Secrets Management** | Requires external tools like Azure Key Vault or HashiCorp Vault. |
+---
